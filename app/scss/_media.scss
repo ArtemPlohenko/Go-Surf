@@ -126,6 +126,10 @@
     }
   }
 
+  .menu-btn {
+    display: flex;
+  }
+
   .header__search {
     padding: 40px 15px 15px;
   }
@@ -196,10 +200,7 @@
     display: block;
     text-align: center;
     padding-right: 0;
-    padding-bottom: 20px;
-    height: auto;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
+    height: 100vh;
   }
 
   .header__search {
@@ -218,5 +219,9 @@
 
   .header__location {
     margin-top: 0;
+  }
+
+  .header__title {
+    display: none;
   }
 }
