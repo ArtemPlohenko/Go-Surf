@@ -154,6 +154,14 @@
 @media (max-width: 1102px) {
   .slider-map {
     background-image: none;
+    max-width: 100%;
+    min-height: 280px;
+    overflow: hidden;
+
+    .slick-list {
+      overflow: visible;
+      min-height: 280px;
+    }
   }
 
   .slider-dots__circle {
@@ -161,10 +169,29 @@
   }
 
   .slider-dots__content {
+    transform: translateX(0);
+    width: 285px;
+    padding: 28px 31px 0 32px;
     display: block;
     &::before {
       display: none;
     }
+  }
+
+  .slick-current .slider-dots__content {
+    background: rgba(#ccc, 0.7);
+  }
+
+  .slider-dots {
+    position: static;
+  }
+
+  .slick-track {
+    min-height: 280px;
+  }
+
+  .slider-dots--8 .slider-dots__content {
+    transform: translateX(0);
   }
 }
 

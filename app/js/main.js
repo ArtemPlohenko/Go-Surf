@@ -13,6 +13,12 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 4,
     asNavFor: ".header__slider",
+    responsive: [
+      {
+        breakpoint: 961,
+        settings: "unslock",
+      },
+    ],
   });
 
   $(".surf-slifer").slick({
@@ -40,6 +46,15 @@ $(function () {
     arrows: false,
     asNavFor: ".surf-slifer",
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1210,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 
   $(".holder__slider, .shop__slider").slick({
