@@ -151,7 +151,6 @@
   background-color: rgba(255, 255, 255, 0.1);
 
   &__inner {
-
     width: 40px;
   }
 
@@ -159,7 +158,7 @@
     height: 5px;
     background-color: $green;
 
-    +.menu-btn__line {
+    + .menu-btn__line {
       margin-top: 5px;
     }
   }
@@ -278,9 +277,11 @@
 }
 
 .surf-box {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  &__wrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   &__inner {
     min-height: 750px;
@@ -343,6 +344,7 @@
 
   .slick-list {
     min-height: 635px;
+    overflow: visible;
   }
 
   .slick-current {
@@ -415,6 +417,7 @@
   background-color: $green;
   border-radius: 50%;
   outline: none;
+  box-shadow: 0px 0px 35px rgba(74, 246, 205, 0.837777);
 }
 
 .slider-dots__content {
@@ -771,12 +774,12 @@
   left: 50%;
   transform: translate(-50%, -50%) rotate(0);
 
-  &+.circle-row {
+  & + .circle-row {
     transform: translate(-50%, -50%) rotate(90deg);
   }
 }
 
-.surfboard-box__circle.active+.surfboard-box__content {
+.surfboard-box__circle.active + .surfboard-box__content {
   display: block;
 }
 
