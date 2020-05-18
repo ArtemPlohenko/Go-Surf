@@ -37,6 +37,19 @@ $(function () {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+        },
+      },
     ],
   });
 
@@ -48,10 +61,24 @@ $(function () {
     focusOnSelect: true,
     responsive: [
       {
-        breakpoint: 1210,
+        breakpoint: 1102,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
         },
       },
     ],
