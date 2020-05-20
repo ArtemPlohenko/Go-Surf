@@ -3,6 +3,12 @@
 @import "fonts";
 @import "global";
 
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
 .header {
   position: relative;
   height: 100vh;
