@@ -136,7 +136,7 @@ sup {
 /* Embedded content
    ========================================================================== */
 /**
- * Remove the border on images inside links in IE 10.
+ * Remove the border on img inside links in IE 10.
  */
 img {
   border-style: none;
@@ -391,7 +391,7 @@ template {
 .slick-track:before,
 .slick-track:after {
   display: table;
-  content: '';
+  content: "";
 }
 
 .slick-track:after {
@@ -409,7 +409,7 @@ template {
   min-height: 1px;
 }
 
-[dir='rtl'] .slick-slide {
+[dir="rtl"] .slick-slide {
   float: right;
 }
 
@@ -479,7 +479,7 @@ template {
 }
 
 .mfp-container:before {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -508,7 +508,8 @@ template {
   cursor: progress;
 }
 
-.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+.mfp-zoom-out-cur,
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
   cursor: -moz-zoom-out;
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
@@ -543,7 +544,7 @@ template {
 }
 
 .mfp-preloader {
-  color: #CCC;
+  color: #ccc;
   position: absolute;
   top: 50%;
   width: auto;
@@ -555,11 +556,11 @@ template {
 }
 
 .mfp-preloader a {
-  color: #CCC;
+  color: #ccc;
 }
 
 .mfp-preloader a:hover {
-  color: #FFF;
+  color: #fff;
 }
 
 .mfp-s-ready .mfp-preloader {
@@ -601,7 +602,7 @@ button::-moz-focus-inner {
   text-align: center;
   opacity: 0.65;
   padding: 0 0 18px 10px;
-  color: #FFF;
+  color: #fff;
   font-style: normal;
   font-size: 28px;
   font-family: Arial, Baskerville, monospace;
@@ -622,7 +623,7 @@ button::-moz-focus-inner {
 
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {
-  color: #FFF;
+  color: #fff;
   right: -6px;
   text-align: right;
   padding-right: 6px;
@@ -633,7 +634,7 @@ button::-moz-focus-inner {
   position: absolute;
   top: 0;
   right: 0;
-  color: #CCC;
+  color: #ccc;
   font-size: 12px;
   line-height: 18px;
   white-space: nowrap;
@@ -662,7 +663,7 @@ button::-moz-focus-inner {
 
 .mfp-arrow:before,
 .mfp-arrow:after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 0;
@@ -691,13 +692,13 @@ button::-moz-focus-inner {
 }
 
 .mfp-arrow-left:after {
-  border-right: 17px solid #FFF;
+  border-right: 17px solid #fff;
   margin-left: 31px;
 }
 
 .mfp-arrow-left:before {
   margin-left: 25px;
-  border-right: 27px solid #3F3F3F;
+  border-right: 27px solid #3f3f3f;
 }
 
 .mfp-arrow-right {
@@ -705,12 +706,12 @@ button::-moz-focus-inner {
 }
 
 .mfp-arrow-right:after {
-  border-left: 17px solid #FFF;
+  border-left: 17px solid #fff;
   margin-left: 39px;
 }
 
 .mfp-arrow-right:before {
-  border-left: 27px solid #3F3F3F;
+  border-left: 27px solid #3f3f3f;
 }
 
 .mfp-iframe-holder {
@@ -764,7 +765,7 @@ img.mfp-img {
 }
 
 .mfp-figure:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 40px;
@@ -779,7 +780,7 @@ img.mfp-img {
 }
 
 .mfp-figure small {
-  color: #BDBDBD;
+  color: #bdbdbd;
   display: block;
   font-size: 12px;
   line-height: 14px;
@@ -801,7 +802,7 @@ img.mfp-img {
 .mfp-title {
   text-align: left;
   line-height: 18px;
-  color: #F3F3F3;
+  color: #f3f3f3;
   word-wrap: break-word;
   padding-right: 36px;
 }
@@ -814,7 +815,8 @@ img.mfp-img {
   cursor: pointer;
 }
 
-@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+@media screen and (max-width: 800px) and (orientation: landscape),
+  screen and (max-height: 300px) {
   /**
        * Remove all paddings around the image on small screen
        */

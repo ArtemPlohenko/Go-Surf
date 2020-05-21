@@ -3,12 +3,6 @@
 @import "fonts";
 @import "global";
 
-body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
 .header {
   position: relative;
   height: 100vh;
@@ -18,11 +12,12 @@ body {
 .header__slider {
   &-item {
     height: 100vh;
-    background-image: url(../images/header-bg.jpg);
+    background-image: url(../img/header-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow-x: hidden;
   }
 }
 
@@ -187,8 +182,54 @@ body {
 }
 
 .header__search {
-  padding-top: 15px;
-  padding-bottom: 35px;
+  margin: 0 auto 20px;
+  width: 0px;
+  height: 50px;
+  text-align: center;
+  line-height: 45px;
+  padding-right: 50px;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  position: relative;
+  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input {
+  border: 0px;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  width: 0%;
+  padding: 5px 0;
+  outline: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.header__search .fa {
+  color: #ffffff;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.header__search.active {
+  width: 250px;
+  padding-left: 25px;
+  transition: all 0.5s ease;
+}
+
+.input.active {
+  width: 98%;
+  padding-left: 5px;
+  transition: all 0.5s 0.8s ease;
+}
+
+input::placeholder {
+  color: #fff;
 }
 
 .header__location {
@@ -206,7 +247,7 @@ body {
     position: absolute;
     width: 11px;
     height: 13px;
-    background-image: url(../images/marker.svg);
+    background-image: url(../img/marker.svg);
     left: 0;
     top: 0;
   }
@@ -239,7 +280,7 @@ body {
 }
 
 .surf {
-  background-image: url(../images/surf-bg.png);
+  background-image: url(../img/surf-bg.png);
   background-position: right 200px;
   background-repeat: no-repeat;
   background-size: auto;
@@ -342,7 +383,7 @@ body {
 .slider-map {
   max-width: 1200px;
   min-height: 635px;
-  background-image: url(../images/world-map-dots.png);
+  background-image: url(../img/world-map-dots.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -434,6 +475,7 @@ body {
   position: absolute;
   bottom: 35px;
   transform: translateX(-50%);
+  z-index: 1;
 
   &::before {
     content: "";
@@ -477,7 +519,7 @@ body {
     &::before {
       content: "";
       position: absolute;
-      background-image: url(../images/mini-marker.png);
+      background-image: url(../img/mini-marker.png);
       width: 14px;
       height: 17px;
       background-size: cover;
@@ -527,10 +569,10 @@ body {
 }
 
 .holder {
-  background-image: url(../images/travel-bg.png);
+  background-image: url(../img/travel-bg.png);
 
   &.sleep {
-    background-image: url(../images/frangipani.png);
+    background-image: url(../img/frangipani.png);
   }
 
   background-position: bottom right;
@@ -640,7 +682,7 @@ body {
 }
 
 .shop {
-  background-image: url(../images/shop-bg.png);
+  background-image: url(../img/shop-bg.png);
   background-repeat: no-repeat;
   background-position: right center;
 

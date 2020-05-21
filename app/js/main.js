@@ -3,9 +3,9 @@ $(function () {
     infinite: true,
     fade: true,
     prevArrow:
-      '<img class="slider-arrows slider-arrows__left" src="images/arrows-left.svg" alt="">',
+      '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt="">',
     nextArrow:
-      '<img class="slider-arrows slider-arrows__right" src="images/arrows-right.svg" alt="">',
+      '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt="">',
     asNavFor: ".slider-dotshead",
   });
 
@@ -25,9 +25,9 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow:
-      '<img class="slider-arrows slider-arrows__left" src="images/arrows-left.svg" alt="">',
+      '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt="">',
     nextArrow:
-      '<img class="slider-arrows slider-arrows__right" src="images/arrows-right.svg" alt="">',
+      '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt="">',
     asNavFor: ".slider-map",
     responsive: [
       {
@@ -95,13 +95,13 @@ $(function () {
     infinite: true,
     fade: true,
     prevArrow:
-      '<img class="slider-arrows slider-arrows__left" src="images/arrows-left.svg" alt="">',
+      '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt="">',
     nextArrow:
-      '<img class="slider-arrows slider-arrows__right" src="images/arrows-right.svg" alt="">',
+      '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt="">',
   });
 
   $(
-    '<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="images/plus.svg" alt="" /></div><div class="quantity-button quantity-down"><img src="images/minus.svg" alt="" /></div></div>'
+    '<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="img/plus.svg" alt="" /></div><div class="quantity-button quantity-down"><img src="img/minus.svg" alt="" /></div></div>'
   ).insertAfter(".quantity input");
   $(".quantity").each(function () {
     var spinner = $(this),
@@ -154,5 +154,12 @@ $(function () {
 
   $(".menu-btn").on("click", function () {
     $(".menu").toggleClass("active");
+  });
+
+  new WOW().init();
+
+  $(".fa-search").click(function () {
+    $(".header__search, .input").toggleClass("active");
+    $("input[type='text']").focus();
   });
 });

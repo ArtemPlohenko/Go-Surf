@@ -24,6 +24,7 @@
   "dependencies": {
     "kind-of": "^6.0.3",
     "minimist": "^1.2.5",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "wow.js": "^1.2.2"
   }
 }
