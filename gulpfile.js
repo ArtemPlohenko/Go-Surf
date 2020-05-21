@@ -119,3 +119,5 @@ gulp.task(
   "default",
   gulp.parallel("css", "scss", "js", "browser-sync", "watch")
 );
+
+gulp.task("default", gulp.series("server"));
