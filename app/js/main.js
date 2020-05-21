@@ -155,4 +155,11 @@ $(function () {
   $(".menu-btn").on("click", function () {
     $(".menu").toggleClass("active");
   });
+
+  new WOW().init();
+
+  $(".fa-search").click(function () {
+    $(".header__search, .input").toggleClass("active");
+    $("input[type='text']").focus();
+  });
 });
