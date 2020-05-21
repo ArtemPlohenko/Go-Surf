@@ -12,7 +12,7 @@
 .header__slider {
   &-item {
     height: 100vh;
-    background-image: url(../images/header-bg.jpg);
+    background-image: url(../img/header-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -247,7 +247,7 @@ input::placeholder {
     position: absolute;
     width: 11px;
     height: 13px;
-    background-image: url(../images/marker.svg);
+    background-image: url(../img/marker.svg);
     left: 0;
     top: 0;
   }
@@ -280,13 +280,10 @@ input::placeholder {
 }
 
 .surf {
-  background-image: url(../images/surf-bg.png);
+  background-image: url(../img/surf-bg.png);
   background-position: right 200px;
   background-repeat: no-repeat;
   background-size: auto;
-  // overflow-y: scroll;
-  // scroll-behavior: smooth;
-  // height: 100%;
 }
 
 .surf__subtitle {
@@ -386,7 +383,7 @@ input::placeholder {
 .slider-map {
   max-width: 1200px;
   min-height: 635px;
-  background-image: url(../images/world-map-dots.png);
+  background-image: url(../img/world-map-dots.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -522,7 +519,7 @@ input::placeholder {
     &::before {
       content: "";
       position: absolute;
-      background-image: url(../images/mini-marker.png);
+      background-image: url(../img/mini-marker.png);
       width: 14px;
       height: 17px;
       background-size: cover;
@@ -572,10 +569,10 @@ input::placeholder {
 }
 
 .holder {
-  background-image: url(../images/travel-bg.png);
+  background-image: url(../img/travel-bg.png);
 
   &.sleep {
-    background-image: url(../images/frangipani.png);
+    background-image: url(../img/frangipani.png);
   }
 
   background-position: bottom right;
@@ -685,7 +682,7 @@ input::placeholder {
 }
 
 .shop {
-  background-image: url(../images/shop-bg.png);
+  background-image: url(../img/shop-bg.png);
   background-repeat: no-repeat;
   background-position: right center;
 
