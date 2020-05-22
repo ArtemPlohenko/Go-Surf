@@ -2,3 +2,4 @@ node_modules/
 ssh-Go-Surf.local/
 ssh.local/
 dist/
+bower_components/
