@@ -1,4 +1,6 @@
 $(function () {
+  new WOW().init();
+
   $(".header__slider").slick({
     infinite: true,
     fade: true,
@@ -160,6 +162,4 @@ $(function () {
     $(".header__search, .input").toggleClass("active");
     $("input[type='text']").focus();
   });
-
-  new WOW().init();
 });
