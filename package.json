@@ -24,6 +24,7 @@
   "dependencies": {
     "dav": "^1.8.0",
     "kind-of": "^6.0.3",
+    "lodash": "^4.17.19",
     "minimist": "^1.2.5",
     "slick-carousel": "^1.8.1",
     "wow.js": "^1.2.2",
