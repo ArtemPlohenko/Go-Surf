@@ -3,3 +3,4 @@ ssh-Go-Surf.local/
 ssh.local/
 dist/
 bower_components/
+package-lock.json
